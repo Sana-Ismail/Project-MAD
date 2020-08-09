@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black1"
+        android:fontFamily="@font/cedarville_cursive"
+        android:gravity="center"
+        android:text="Today's Reminders"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@drawable/b"
+
+        >
+
+        <ListView
+            android:id="@+id/listvieww"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            >
+        </ListView>
+
+        <TextView
+        android:id="@+id/no_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="No reminders for today..."
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+            android:fontFamily="@font/cedarville_cursive"
+        android:visibility="invisible"
+        />
+
+    </RelativeLayout>
+
+</RelativeLayout>

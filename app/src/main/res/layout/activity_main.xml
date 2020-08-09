@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+<!--
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/black1"
+        android:fontFamily="@font/cedarville_cursive"
+        android:gravity="center"
+        android:text="Reminders"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp" />          -->
+
+    <RelativeLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@drawable/night_sky3"
+
+        >
+<!--        android:layout_below="@id/header"-->
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_grey"
+            >
+        </ListView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/dark_grey"
+            android:src="@drawable/ic_plus_white"
+            app:maxImageSize="55dp"
+            app:elevation="10dp"
+            app:useCompatPadding="true"
+            app:fabSize="normal" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

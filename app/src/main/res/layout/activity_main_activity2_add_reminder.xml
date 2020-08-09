@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="40dp"
+    android:background="@drawable/red_roses1"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    >
+
+    <!--
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:src="@drawable/reminder2"
+            android:scaleType="fitXY"
+            />
+        -->
+
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+
+            android:hint="Title"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:background="@color/light_grey"
+            />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/et"
+            android:hint="Description"
+            android:padding="10dp"
+            android:textSize="15sp"
+
+            android:textColor="@color/white"
+            android:background="@color/light_grey"
+            />
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/time_tv"
+            android:text="  Select date"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:background="@color/light_grey"
+            android:drawableLeft="@drawable/ic_baseline_date_range_24"
+            />
+
+        <TextView
+            android:id="@+id/time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_below="@id/find_location"
+            android:text="  Select time"
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/ic_timer"
+            android:background="@color/light_grey"
+
+            />
+
+        <EditText
+            android:id="@+id/loc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/et2"
+            android:hint="Add location here..."
+            android:padding="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/ic_location"
+            android:background="@color/light_grey"
+            />
+
+        <Button
+            android:id="@+id/find_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/loc"
+            android:text="  Find a location"
+            android:textColor="@color/white"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/ic_findlocation"
+            android:background="@color/black1"
+
+            />
+
+        <Button
+            android:id="@+id/btn_setReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="85dp"
+            android:layout_below="@id/time_tv"
+            android:text="  set Reminder"
+            android:textColor="@color/white"
+            android:drawableLeft="@drawable/ic_alertred"
+            android:layout_centerInParent="true"
+            android:background="@color/black1"
+            />
+
+</RelativeLayout>
